@@ -167,8 +167,8 @@ body {
 }
 
 .notification-icon {
-    padding-left: 21vw;
-    padding-right: 3vw;
+    margin-left: 21vw;
+    margin-right: 3vw;
 }
 
 .top-header .username {
@@ -257,16 +257,26 @@ body {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
     padding: 20px;
     height: 100%;
+
+    /* Add flexbox to control layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .community-actions {
     display: flex;
     justify-content: end;
     gap: 10px;
+
+    justify-content: flex-end;
+    margin-top: auto;
+    /* This pushes it to the bottom */
 }
 
 .community-title {
     font-size: 30px;
+    padding-bottom: 20px;
 }
 
 
@@ -276,6 +286,7 @@ body {
     flex-direction: column-reverse;
     justify-content: flex-start;
     gap: 3vh;
+    margin-left: 30px;
 }
 
 
@@ -334,18 +345,45 @@ body {
     padding-bottom: 2vh;
 }
 
-.friends-content .pfp{
+.friends-content .pfp {
     border-radius: 16px;
     width: 65px;
     height: 65px;
 }
 
-.friend-item{
+.friend-item {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.friend-name{
+.friend-name {
     font-size: 30px;
+}
+
+.action-btn,
+.nav-link,
+.sec-link,
+.icon,
+.community-item {
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover,
+.nav-link:hover,
+.sec-link:hover,
+.icon:hover,
+.community-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.friend-item:hover,
+.highlight-item:hover .username:hover,
+.action-btn:hover,
+.nav-link:hover,
+.sec-link:hover,
+.icon:hover,
+.community-item:hover {
+    cursor: pointer;
 }
