@@ -12,6 +12,10 @@
     padding: 0px;
 }
 
+p {
+    font-family: "robotoblack";
+}
+
 body,
 html {
     width: 100%;
@@ -216,3 +220,46 @@ body {
     height: 5vh;
     width: 9vw;
 }
+
+
+/* Main content */
+
+.content {
+    padding-top: 3vh;
+    padding-left: 2vw;
+}
+
+
+/* communities */
+
+.communities-title {
+    font-size: 25px;
+    padding-bottom: 2vh;
+
+}
+
+.community-item {
+    background-color: #faffff;
+    border-left: 10px solid gold;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    height: 80%;
+}
+
+.community-actions {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.community-title {
+    font-size: 30px;
+}
+
+.communities-content {
+    display: grid;
+    grid-template-columns: 22vw 22vw;
+    gap: 40px;
+}
+
