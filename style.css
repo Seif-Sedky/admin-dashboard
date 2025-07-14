@@ -7,6 +7,11 @@
 
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body,
 html {
     width: 100%;
@@ -21,12 +26,13 @@ a {
 }
 
 ul {
+    padding: 0;
     list-style-type: none;
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     cursor: pointer
 }
 
@@ -42,7 +48,7 @@ ul {
 /* Grid setup */
 body {
     display: grid;
-    grid-template-columns: 15vw 85vw;
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: auto 1fr;
     /* Header takes needed space, content fills rest */
 }
@@ -70,4 +76,61 @@ body {
     grid-column: 2/-1;
     grid-row: 2/-1;
     background-color: rgb(235, 235, 235);
+}
+
+
+/* SECTION 1 - SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    transform: rotate(90deg);
+
+}
+
+.dashboard-title {
+    color: white;
+    font-weight: 900;
+    font-family: "robotoblack";
+    font-size: 40px;
+
+}
+
+.nav-list,
+.security-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 25px;
+}
+
+.nav-item,
+.security-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-link,
+.sec-link {
+    color: white;
+    font-weight: 600;
+    font-family: "robotoblack";
+    font-size: 25px;
 }
