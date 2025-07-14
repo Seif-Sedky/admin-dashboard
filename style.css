@@ -228,6 +228,11 @@ body {
 
     display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: start;
+    /* This ensures both columns start at the top */
+
+    padding-bottom: 40px;
+
 }
 
 
@@ -236,7 +241,7 @@ body {
 .communities-content {
     display: grid;
     grid-template-columns: 22vw 22vw;
-    gap: 50px;
+    gap: 70px;
 }
 
 .communities-title {
@@ -251,7 +256,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
     padding: 20px;
-    height: 90%;
+    height: 100%;
 }
 
 .community-actions {
@@ -269,7 +274,8 @@ body {
 .side-content {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 3vh;
 }
 
 
@@ -307,11 +313,39 @@ body {
     /* adjust this percentage to control line width */
     height: 1px;
     background-color: #ddd;
-    margin: 22px auto 12px auto; /* equal spacing above and below */
+    margin: 22px auto 12px auto;
+    /* equal spacing above and below */
 }
 
 /* Friends section */
+.friends-content {
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 40px;
+    border-radius: 8px;
+    gap: 50px;
+}
+
 .friends-title {
     font-size: 25px;
     padding-bottom: 2vh;
+}
+
+.friends-content .pfp{
+    border-radius: 16px;
+    width: 65px;
+    height: 65px;
+}
+
+.friend-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.friend-name{
+    font-size: 30px;
 }
