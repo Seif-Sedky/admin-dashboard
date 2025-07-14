@@ -58,11 +58,6 @@ body {
 }
 
 
-.content {
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-    background-color: rgb(235, 235, 235);
-}
 
 
 /* SECTION 1 - SIDEBAR */
@@ -138,7 +133,7 @@ body {
     position: relative;
     /* Needed for z-index to work */
 
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
 
 }
 
@@ -184,7 +179,7 @@ body {
 
 /* bottom header */
 .bottom-header {
-    padding-top: 45px;
+    padding-top: 30px;
     justify-content: space-between;
 }
 
@@ -217,24 +212,36 @@ body {
     transition: all 0.3s ease;
     color: #ffffff;
     font-family: "robotoblack";
-    height: 5vh;
-    width: 9vw;
+    height: 4vh;
+    width: 8vw;
 }
 
 
 /* Main content */
 
 .content {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    background-color: rgb(235, 235, 235);
     padding-top: 3vh;
     padding-left: 2vw;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 
 /* communities */
 
+.communities-content {
+    display: grid;
+    grid-template-columns: 22vw 22vw;
+    gap: 50px;
+}
+
 .communities-title {
-    font-size: 25px;
     padding-bottom: 2vh;
+    font-size: 25px;
 
 }
 
@@ -244,7 +251,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
     padding: 20px;
-    height: 80%;
+    height: 90%;
 }
 
 .community-actions {
@@ -257,9 +264,16 @@ body {
     font-size: 30px;
 }
 
-.communities-content {
-    display: grid;
-    grid-template-columns: 22vw 22vw;
-    gap: 40px;
+
+/* side content */
+.side-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Friends section */
+.friends-title {
+    font-size: 25px;
+    padding-bottom: 2vh;
+}
