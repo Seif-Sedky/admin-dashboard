@@ -268,8 +268,46 @@ body {
 /* side content */
 .side-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
+}
+
+
+/* Highlights sections */
+.highlights-title {
+    font-size: 25px;
+    padding-bottom: 2vh;
+}
+
+.highlights-content {
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.highlight-title {
+    font-size: 20px;
+}
+
+.highlight-content {
+    opacity: 0.5;
+}
+
+
+.highlights-content .highlight-item:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 80%;
+    /* adjust this percentage to control line width */
+    height: 1px;
+    background-color: #ddd;
+    margin: 22px auto 12px auto; /* equal spacing above and below */
 }
 
 /* Friends section */
